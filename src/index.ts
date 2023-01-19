@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 import chalk from "chalk";
 import chalkAnimation from "chalk-animation";
@@ -9,7 +11,7 @@ const runAnimation = () => {
 };
 
 async function welcome() {
-    let animation = chalkAnimation.rainbow("Welcome to Currency Converter");
+    let animation = chalkAnimation.rainbow("Welcome to Currency Converter:");
     await runAnimation();
 
     animation.stop();
@@ -24,14 +26,14 @@ let convertion = {
         "PKR": 1
     },
     "USD": {
-        "USD": 1.21,
+        "GBP": 1.21,
         "PKR": 220.79,
-        "GBP": 1
+        "USD": 1
     },
     "GBP": {
         "PKR": 225.50,
-        "GBP": 0.83,
-        "USD": 1
+        "USD": 0.83,
+        "GBP": 1
     }
 };
 
@@ -57,7 +59,7 @@ const answer: userInput = await inquirer.prompt([
     {
         name: "amount",
         type: "number",
-        message: "Enter Your Convertion Amount: \n",
+        message: "Enter Your Amount: \n",
         validate: (answer) => {
             if (isNaN(answer)) {
                 return "Please Enter A Number";

@@ -1,1 +1,3 @@
-# TypeScript Currency Converter!
+# TypeScript Currency Converter CLI!
+
+npx ahmx-currency-convert-cli

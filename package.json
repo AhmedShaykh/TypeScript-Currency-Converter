@@ -1,7 +1,7 @@
 {
-  "name": "typescript-currency-converter",
+  "name": "ahmx-currency-convert-cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bin/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +16,9 @@
     "url": "https://github.com/AhmedShaykh/TypeScript-Currency-Converter/issues"
   },
   "homepage": "https://github.com/AhmedShaykh/TypeScript-Currency-Converter#readme",
+  "bin": {
+    "ahmx-currency-convert-cli": "bin/index.js"
+  },
   "dependencies": {
     "chalk": "^5.2.0",
     "chalk-animation": "^2.0.3",
